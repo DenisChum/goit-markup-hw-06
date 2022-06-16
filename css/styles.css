@@ -307,6 +307,10 @@ margin-top: 0;
     right: 8px;
 }
 
+.field-icon {
+    fill: black;
+}
+
 /* Button */
 
 .button-first {
@@ -674,6 +678,7 @@ color: var(--main-white-color);
 padding-top: 60px;
 padding-bottom: 60px;
 display: flex;
+position: relative;
 }
 
 .footer-adress {
@@ -692,6 +697,7 @@ color: var(--accent-color);
 
 .footer-link {
 color: rgba(255,255,255,60%);
+font-family: "Roboto", sans-serif;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -721,6 +727,8 @@ padding: 0px;
 margin-bottom: 9px;
 }
 
+
+
 /* footer social-network */
 .footer-icons{
 display: flex;
@@ -729,6 +737,7 @@ padding-left: 0;
 margin-top: 0;
 margin-bottom: 0;
 }
+
 .footer-socials {
 display: flex;
 flex-wrap: wrap;
@@ -737,7 +746,7 @@ height: 80px;
 margin-top: 0;
 margin-left: 0;
 margin-bottom: 0;
-margin-right: 0;}
+margin-right: 93px;}
 
 .ending {
 display: flex;
@@ -747,7 +756,7 @@ margin-left: auto;
 margin-right: auto;
 padding-left: 15px;
 padding-right: 15px;
-Align-items: baseline;
+align-items: baseline;
 }
 
 .join {
@@ -802,6 +811,70 @@ fill: var(--main-white-color);
 text-align: center;
 }
 
+/* Footer email-box */
+
+
+.submit-button {
+    background-color: var(--accent-color);
+    width: 200px;
+    background: var(--accent-color);
+    border-radius: 4px;
+    position: absolute;
+    margin-left: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 29px;
+    text-align: center;
+    box-shadow: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-name {
+    color: var(--main-white-color);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.title-email {
+    color: var(--main-white-color);
+    font-size: 14px;
+    line-height: 16.41px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.subscription-email{
+    background-color: var(--bg-footer-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    color: var(--main-white-color);
+}
+
+.footer_icon-send {
+    fill: var(--main-white-color);
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
 /* Page portfolio */
 /* Head */
 
@@ -815,6 +888,7 @@ font-style: normal;
 .logo-portfolio {
 color: var(--logo-color);
 }
+
 
 
 /* Header */
