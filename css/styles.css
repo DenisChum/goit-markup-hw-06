@@ -417,21 +417,46 @@ margin-left: 0;
 margin-right: 0;
 }
 
+.field-licence-hidden {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute; */
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+}
 
 .icon-fake {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--primary-text-color);
-    border-radius: 2px;
+    border:2px solid var(--logo-color);
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
 }
 
-.field-licence:checked + .icon-fake {
-    background-color: var(--accent-color);
-    background-image: url("../images/Vector.svg");
-    background-size: contain;
-    background-origin: border-box;
+.field-iconchek {
+    fill: #FFFFFF;
+    position: absolute;
+    opacity: 0;
+    background-color: #fff;
 }
+
+.field-licence-hidden:checked + .field-iconchek {
+    opacity: 1;
+    background-color: #2196F3;
+
+
+}
+/* .field-licence-hidden:checked   {
+    opacity: 1;
+} */
 
 /* Button */
 
