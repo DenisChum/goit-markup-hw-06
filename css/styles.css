@@ -399,25 +399,40 @@ color: var(--little-text-color);
 }
 
 .text_button-chekbox {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--main-white-color);
-    padding: 0;
+font-family: "Roboto", sans-serif;
+font-size: 16px;
+line-height: 1.87;
+color: var(--main-white-color);
+padding: 0;
 }
 
 .form-field_chekbox {
-    display: flex;
-    align-items: center;
-    /* padding-left: 61px; */
-    height: 24px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    width: 425px;
-    margin-left: 0;
-    margin-right: 0;
-
+display: flex;
+align-items: center;
+height: 24px;
+margin-bottom: 30px;
+margin-top: 20px;
+width: 425px;
+margin-left: 0;
+margin-right: 0;
 }
+
+
+.icon-fake {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+}
+
+.field-licence:checked + .icon-fake {
+    background-color: var(--accent-color);
+    background-image: url("../images/Vector.svg");
+    background-size: contain;
+    background-origin: border-box;
+}
+
 /* Button */
 
 .button-first {
