@@ -308,7 +308,49 @@ margin-top: 0;
 }
 
 .field-icon {
-    fill: black;
+fill: black;
+position: absolute;
+top:0;
+left:0;
+}
+
+.modal-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;
+    text-align: center;
+}
+
+.field-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.06px;
+    color: var(--little-text-color);
+    margin-bottom: 4px;
+    margin-top: 12px;
+    padding-left: 41px;
+}
+.field-wrapper {
+    display: flex;
+    justify-content:center;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+}
+
+.field-input {
+    width: 448px;
+    height: 40px;
+    
+}
+
+.request-form {
+    /* display: block;
+    padding-left: 41px;
+    padding-bottom: 164px; 
+    padding-right: 39px;  */
 }
 
 /* Button */
