@@ -283,7 +283,6 @@ margin-top: 0;
     top:50%;
     left:50%;
     width: 528px;
-    height: 581px;
     background-color: var(--main-white-color);
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -291,6 +290,7 @@ margin-top: 0;
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px;
 }
 
 .button-backdrop {
@@ -305,13 +305,15 @@ margin-top: 0;
     position: absolute;
     top:8px;
     right: 8px;
+    padding: 5px;
 }
 
 .field-icon {
 fill: black;
 position: absolute;
-top:0;
-left:0;
+top: 50%;
+left: 10px;
+transform: translateY(-50%);
 }
 
 .modal-title {
@@ -320,6 +322,8 @@ left:0;
     font-size: 20px;
     line-height: 23.44px;
     text-align: center;
+    margin-bottom: 12px;
+    margin-top: 0;
 }
 
 .field-name {
@@ -329,9 +333,17 @@ left:0;
     line-height: 14.06px;
     color: var(--little-text-color);
     margin-bottom: 4px;
-    margin-top: 12px;
-    padding-left: 41px;
+    display: block;
 }
+
+.field-name:not(:last-child) {
+    margin-top: 10px;
+}
+
+.field-name:last-child {
+margin-top: 0;
+}
+
 .field-wrapper {
     display: flex;
     justify-content:center;
@@ -343,16 +355,69 @@ left:0;
 .field-input {
     width: 448px;
     height: 40px;
-    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 8px 8px 8px 42px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--little-text-color);
+    cursor: pointer;
 }
 
-.request-form {
-    /* display: block;
-    padding-left: 41px;
-    padding-bottom: 164px; 
-    padding-right: 39px;  */
+.coments-field {
+    width:448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+    outline: none;
+    color: var(--little-text-color);
+    cursor: pointer;
 }
 
+.coments-field::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    cursor: pointer
+}
+
+.form-field_chekbox > span {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--little-text-color);
+
+}
+
+.text_button-chekbox {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--main-white-color);
+    padding: 0;
+}
+
+.form-field_chekbox {
+    display: flex;
+    align-items: center;
+    /* padding-left: 61px; */
+    height: 24px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 425px;
+    margin-left: 0;
+    margin-right: 0;
+
+}
 /* Button */
 
 .button-first {
@@ -407,6 +472,18 @@ cursor: pointer;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.button-sentform {
+    display: block;
+    text-align: center;
+    background-color: var(--accent-color);
+    border: none;
+    width: 200px;
+    padding: 10px 55px;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    cursor: pointer; }
 /* Benefits */
 
 .benefits-title {
