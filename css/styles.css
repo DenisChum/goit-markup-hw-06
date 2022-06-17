@@ -444,20 +444,16 @@ padding-left: 20px;
 }
 
 .field-licence-hidden {
-    /* -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    position: absolute; */
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        margin: -1px;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
 }
 
 .icon-fake {
