@@ -445,7 +445,7 @@
             </button>
             <!-- Modal content -->
             <h2 class="modal-title">Оставьте свои данные,мы Вам перезвоним</h2>
-            <form action="" class="request-form"></form>
+            <form action="" class="request-form">
             <label class="form-field">
                 <span class="field-name">Имя</span>
                 <div class="field-wrapper">
@@ -480,14 +480,15 @@
                 </div>
             </label>
             <label class="form-field_chekbox">
-                    <input name="accept" type="checkbox" class="field-licence-hidden">
+                    <input name="accept" type="checkbox" class="field-licence-hidden" required>
                     <svg class="field-iconchek" width="16" height="15">
                         <use href="./images/spraitlast.svg#icon-icon-check"></use>
                     </svg>
                     <span class="icon-fake"></span>
-                    <span class="chekbox-rules">Соглашаюсь с рассылкой и принимаю<a class="link-licenceagreement" href>Условия договора</a></span>
+                    <span class="chekbox-rules">Соглашаюсь с рассылкой и принимаю <a class="link-licenceagreement" href>Условия договора</a></span>
                 </label>
                 <button class="button-sentform" type="submit"><span class="text_button-chekbox">Отправить</span></button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
